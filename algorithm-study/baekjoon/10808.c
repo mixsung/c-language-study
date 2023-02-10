@@ -9,31 +9,22 @@ int main(int argc, char **argv)
     if (argc != 2)
         return (0);
 
-    char alpha_arr[26] = "abcdefghijklmnopqrstuvwxyz";
     int res_arr[26];
-
-    int idx = 0;
-    while (idx < 26)
-    {
-        res_arr[idx] = 0;
-        idx++;
-    }
-
     int i = 0;
-    while (argv[1][i])
+    while (i < 26)   // int array 초기화
     {
-        int j = 0;
-        while (alpha_arr[j])
-        {
-            if (argv[1][i] == alpha_arr[j])
-                res_arr[j]++;
-            j++;
-        }
+        res_arr[i] = 0;
         i++;
     }
-
     i = 0;
-    while (i < 26)
+    while (argv[1][i])  // 알파벳 배열을 따로 만들지 않고 바로 넣기로 수정함
+    {
+        char tmp = argv[1][i];
+        res_arr[tmp - 'a']++;
+        i++;
+    }
+    i = 0;
+    while (i < 26)   // 출력으로 결과확인
     {
         printf("%d ", res_arr[i]);
         i++;
