@@ -60,10 +60,10 @@ int CQ_IsFull(CircularQueue *Queue) {
 }
 
 // 큐의 모든 요소 출력
-void  display(CircularQueue *Queue)
-{
+// void  display(CircularQueue *Queue)
+// {
   
-}
+// }
 
 // 큐가 비어있지 않으면 맨 앞 요소를 삭제하지 않고 반환
 ElementType peek(CircularQueue *Queue)
