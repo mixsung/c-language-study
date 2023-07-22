@@ -8,8 +8,11 @@ int main(void)
     // printf("\n=== Sorting using selection sort ===\n");
 	// selection_sort(arr, arr_size);
 
-    printf("\n=== Sorting using insertion sort ===\n");
-    insertion_sort(arr, arr_size);
+    // printf("\n=== Sorting using insertion sort ===\n");
+    // insertion_sort(arr, arr_size);
+
+    printf("\n=== Sorting using bubble sort ===\n");
+    bubble_sort(arr, arr_size);
 
 	display(arr, arr_size);
 	return (0);
