@@ -1,4 +1,11 @@
-.gch
+# Ignore .vscode directory
+.vscode/
+
+# Ignore a.out file (executable on Unix-like systems)
 a.out
-/a.out.dSYM
-.o
+
+# Ignore gch files (precompiled header files)
+*.gch
+
+# Ignore a.out.dSYM directory (debug symbols for a.out)
+a.out.dSYM/
