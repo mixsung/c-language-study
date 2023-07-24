@@ -1,6 +1,6 @@
 #include "sorting.h"
 
-void display(int *arr, size_t size)
+void display_arr(int *arr, size_t size)
 {
 	size_t i = 0;
 

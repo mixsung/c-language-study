@@ -15,7 +15,7 @@ void bubble_sort(int *arr, size_t size)
 				swap(&arr[j], &arr[j + 1]);
 			j++;
 		}
-		display(arr, size);
+		display_arr(arr, size);
 		i++;
 	}
 	printf("\n-- sorting done -- \n");

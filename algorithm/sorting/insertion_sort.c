@@ -16,7 +16,7 @@ void insertion_sort(int *arr, size_t size)
             j = j - 1;
         }
         arr[j + 1] = key;   // while문을 빠져나오고 해당 위치 +1 해서 적절한 삽입 위치에 key 삽입
-        display(arr, size);
+        display_arr(arr, size);
         i++;
     }
     printf("\n-- sorting done -- \n");

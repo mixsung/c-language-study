@@ -34,7 +34,7 @@ void insertion_sort2(int *arr, size_t size)
                 }
                 j++;
             }
-            display(arr, size);
+            display_arr(arr, size);
             i++;
         }
     }

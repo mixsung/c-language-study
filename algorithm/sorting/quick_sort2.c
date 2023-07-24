@@ -2,7 +2,7 @@
 
 // quick sort는 int 값으로 비교하기때문에 size_t 대신 int 사용
 
-int static partition(int *arr, int left, int right)
+static int partition(int *arr, int left, int right)
 {
 	int first = left;
 	int pivot = arr[first];

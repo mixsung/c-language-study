@@ -22,7 +22,7 @@ void selection_sort(int *arr, size_t size)
         size_t least = find_least(arr, i, size);
 		if (i != least)
 			swap(&arr[i], &arr[least]);
-		display(arr, size);
+		display_arr(arr, size);
 		i++;
     }
 	printf("\n-- sorting done -- \n");
