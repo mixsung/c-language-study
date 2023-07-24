@@ -1,9 +1,11 @@
 #include "sorting.h"
 
-static size_t partition(int *arr, size_t left, size_t right)
+// quick sort는 int 값으로 비교하기때문에 size_t 대신 int 사용
+
+static int partition(int *arr, int left, int right)
 {
-    size_t low = left + 1;
-    size_t high = right;
+    int low = left + 1;
+    int high = right;
     int    pivot = arr[left];
 
     while (low < high)
@@ -19,11 +21,11 @@ static size_t partition(int *arr, size_t left, size_t right)
     return (high);
 }
 
-void quick_sort(int *arr, size_t left, size_t right)
+void quick_sort(int *arr, int left, int right)
 {
     if (left < right)
     {
-        size_t pivot = partition(arr, left, right);
+        int pivot = partition(arr, left, right);
         quick_sort(arr, left, pivot - 1);
         quick_sort(arr, pivot + 1, right);
     }

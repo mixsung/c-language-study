@@ -9,6 +9,7 @@ void selection_sort(int *arr, size_t size);
 void insertion_sort(int *arr, size_t size);
 void insertion_sort2(int *arr, size_t size);
 void bubble_sort(int *arr, size_t size);
-void quick_sort(int *arr, size_t left, size_t right);
+void quick_sort(int *arr, int left, int right);
+void quick_sort2(int *arr, int left, int right);
 
 #endif
