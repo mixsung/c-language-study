@@ -1,8 +1,9 @@
 #include "sorting.h"
+#include "math.h"
 
 int main(void)
 {
-	int arr[] = {5, 2, 4, 6000, 1, 3};
+	int arr[] = {5, -2, 4, 6000, -100, 3};
     // int arr[6] = {1, 2, 3, 5, 6, 4};
 	size_t arr_size = sizeof(arr) / sizeof(arr[0]);
 
@@ -35,9 +36,16 @@ int main(void)
 	// display(queue);
 	display_arr(arr, arr_size);
 
-	radix_sort(arr, arr_size);
+	radixSort(arr, arr_size);
 
 	printf("\nSorted Queue: ");
 	display_arr(arr, arr_size);
+
+	// int num = -2;
+	// int num2 = -100;
+	// if (num < num2)
+	// 	printf("-2 < 100");
+	// else
+	// 	printf("-2 > -100");
 	return (0);
 }
