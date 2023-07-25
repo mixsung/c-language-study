@@ -25,27 +25,22 @@ int main(void)
     // printf("\n=== Sorting using quick sort2 ===\n");
     // quick_sort2(arr, 0, (int)arr_size - 1);
 
-	printf("\n=== Sorting using radix sort ===\n");
-	// CircularLinkedQueue *queue;
-	// createQueue(&queue);
+	// printf("\n=== Sorting using radix sort ===\n");
+	// display_arr(arr, arr_size);
 
-	// size_t i = 0;
-	// while (i < arr_size)
-	// 	enqueue(queue, arr[i++]);
-	// printf("Original Queue: ");
-	// display(queue);
-	display_arr(arr, arr_size);
+	// radixSort(arr, arr_size);
 
-	radixSort(arr, arr_size);
+	// printf("\nSorted Queue: ");
+	// display_arr(arr, arr_size);
 
-	printf("\nSorted Queue: ");
-	display_arr(arr, arr_size);
+	printf("\n=== Sorting using merge sort with deque ===\n");
+	CircularLinkedQueue *deque;
+	createQueue(&deque);
 
-	// int num = -2;
-	// int num2 = -100;
-	// if (num < num2)
-	// 	printf("-2 < 100");
-	// else
-	// 	printf("-2 > -100");
+	for (size_t i = 0; i < arr_size; i++)
+		enqueue(deque, arr[i]);
+	display(deque);
+	merge_sort_deque(deque);
+
 	return (0);
 }
